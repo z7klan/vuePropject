@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     listContent: []
-  },
+  },  
   mutations: {
     storageCotent(state, value) {
       //默认第一个参数为state

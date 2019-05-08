@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import store from "../store.js";
+// import store from "../store.js";
 export default {
   data() {
     return {
@@ -19,16 +19,16 @@ export default {
       content: ""
     };
   },
-  store,
+  // store,
   methods: {
     add() {
-      store.commit("storageCotent", {
+      this.$store.commit("storageCotent", {
         content: this.content,
         title: this.title
       });
       this.title = "";
       this.content = "";
-      this.$router.push("/home/user");
+      this.$router.push("/home/list");
     }
   }
 };
